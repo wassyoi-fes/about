@@ -258,61 +258,25 @@ a { color: inherit; }
   display: flex; flex-direction: column; gap: 14px;
   align-items: center; text-align: center;
 }
-.wp-founder--loading {
+.wp-founder--coming {
   background: rgba(26,22,20,0.025);
-  border: 1px dashed rgba(26,22,20,0.2);
+  border: 1px solid rgba(26,22,20,0.1);
+  gap: 10px;
+  padding: 36px 28px;
 }
 .wp-founder__role {
   font-family: var(--m-font-mono); font-size: 11px;
   letter-spacing: 0.08em; color: var(--m-red);
 }
-.wp-founder__loading-name {
+.wp-founder__name-coming {
   font-family: var(--m-font-display); font-weight: 800;
-  font-size: 22px; letter-spacing: -0.02em;
+  font-size: 26px; letter-spacing: -0.02em;
   color: var(--m-ink-3); margin: 0;
 }
-.wp-loading-dots {
-  display: inline-block;
-  width: 1.4em;
-  text-align: left;
-  vertical-align: bottom;
-}
-.wp-loading-dots::after {
-  content: "";
-  animation: wp-dots 1.6s infinite;
-}
-@keyframes wp-dots {
-  0%   { content: ""; }
-  25%  { content: "."; }
-  50%  { content: ".."; }
-  75%, 100% { content: "..."; }
-}
-.wp-skeleton {
-  display: flex; flex-direction: column; gap: 8px;
-  width: 100%; align-items: center; margin-top: 4px;
-}
-.wp-skeleton span {
-  display: block; height: 10px; border-radius: 6px;
-  background: linear-gradient(90deg, rgba(26,22,20,0.05) 25%, rgba(26,22,20,0.14) 50%, rgba(26,22,20,0.05) 75%);
-  background-size: 200% 100%;
-  animation: wp-shimmer 1.6s ease-in-out infinite;
-}
-.wp-skeleton span:nth-child(1) { width: 90%; }
-.wp-skeleton span:nth-child(2) { width: 75%; }
-.wp-skeleton span:nth-child(3) { width: 55%; }
-@keyframes wp-shimmer {
-  0%   { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
-}
-.wp-founders__note {
-  margin: 24px auto 0;
+.wp-founder__hint {
   font-family: var(--m-font-mono);
-  font-size: 12px; letter-spacing: 0.08em;
-  color: var(--m-ink-3);
-}
-@media (prefers-reduced-motion: reduce) {
-  .wp-loading-dots::after { animation: none !important; content: "..." !important; }
-  .wp-skeleton span { animation: none !important; }
+  font-size: 11px; letter-spacing: 0.08em;
+  color: var(--m-ink-3); margin: 0;
 }
 
 /* ========== Contact ========== */

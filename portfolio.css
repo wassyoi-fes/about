@@ -64,7 +64,7 @@ a { color: inherit; }
 .wp-section, .wp-contact { scroll-margin-top: 88px; }
 
 /* ========== Hero ========== */
-.wp-hero { position: relative; padding: 96px 32px 84px; overflow: hidden; }
+.wp-hero { position: relative; padding: 96px 32px 84px; overflow: hidden; text-align: center; }
 .wp-hero__inner { position: relative; }
 .wp-eyebrow { /* base, but ensure header alignment */ }
 .wp-hero__title {
@@ -96,9 +96,9 @@ a { color: inherit; }
 }
 .wp-hero__lede {
   max-width: 580px; font-size: 17px;
-  margin: 0 0 36px;
+  margin: 0 auto 36px;
 }
-.wp-hero__cta { display: flex; gap: 12px; flex-wrap: wrap; }
+.wp-hero__cta { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 
 /* festival decor — used as accent only (deco-1 baseline) */
 .wp-decor { position: absolute; pointer-events: none; }
@@ -135,7 +135,7 @@ a { color: inherit; }
 }
 
 /* ========== Section frame ========== */
-.wp-section { padding: 96px 32px; position: relative; }
+.wp-section { padding: 96px 32px; position: relative; text-align: center; }
 .wp-section--alt { background: var(--m-paper); }
 .wp-section--ink { background: var(--m-ink); color: var(--m-cream); }
 .wp-section__head { margin: 0 0 48px; }
@@ -149,7 +149,7 @@ a { color: inherit; }
 .wp-section--ink .wp-section__title { color: var(--m-cream); }
 .wp-section__title .accent { color: var(--m-red); }
 .wp-section--ink .wp-section__title .accent { color: var(--m-mustard); }
-.wp-section__lede { margin: 18px 0 0; max-width: 640px; }
+.wp-section__lede { margin: 18px auto 0; max-width: 640px; }
 .wp-section--ink .wp-section__lede { color: rgba(251,245,233,0.78); }
 
 /* ========== Mission cards (3 values) ========== */
@@ -177,7 +177,7 @@ a { color: inherit; }
 .wp-section--ink .wp-value__desc { color: rgba(251,245,233,0.78); }
 
 /* ========== Concept ("お祭り"の再定義) ========== */
-.wp-concept__body p { max-width: 760px; margin: 0 0 22px; }
+.wp-concept__body p { max-width: 760px; margin: 0 auto 22px; }
 .wp-concept__claim {
   font-family: var(--m-font-display); font-weight: 800;
   font-size: clamp(36px, 4.6vw, 64px);
@@ -222,6 +222,7 @@ a { color: inherit; }
   padding: 36px 38px 32px;
   display: flex; flex-direction: column; gap: 14px;
   min-width: 0;
+  text-align: left;
 }
 .wp-case__meta {
   font-family: var(--m-font-mono);

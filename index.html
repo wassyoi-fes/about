@@ -2,224 +2,270 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>WASSYOI — 街ぜんぶの<お祭り>を、つくる</title>
+<title>WASSYOI / Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="WASSYOI は、地域のお祭・イベントの運営をデジタルで支える小さな工房です。ボランティア募集から当日運用まで、お祭り単位でお手伝いします。">
-<meta property="og:title" content="WASSYOI — 街ぜんぶの<お祭り>を、つくる">
-<meta property="og:description" content="地域のお祭・イベントの運営をデジタルで支える小さな工房。仙台・石巻発、お祭り単位でお手伝いします。">
+<meta name="description" content="WASSYOI は、地域の&quot;お祭り&quot;・イベントの運営をデジタルで支える学生チーム。仙台・石巻発、&quot;お祭り&quot;単位でお手伝いします。">
+<meta property="og:title" content="WASSYOI / Portfolio">
+<meta property="og:description" content="地域の&quot;お祭り&quot;・イベントの運営をデジタルで支える学生チーム。仙台・石巻発。">
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="matsuri.css">
 <link rel="stylesheet" href="portfolio.css">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23D63B1F'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='40' fill='%23FBF5E9'%3E%E7%A5%AD%3C/text%3E%3C/svg%3E">
+
+<link rel="icon" type="image/png" href="assets/wassyoi-logo.png">
 </head>
-<body class="matsuri-root">
+<body class="matsuri-root font-mode-modern">
 
 <!-- ===== Header ===== -->
-<header class="site-header">
-  <div class="site-header__bar">
-    <div class="site-header__inner">
-      <a href="#" class="site-logo" aria-label="WASSYOI ホーム">
-        <span class="site-logo__mark">祭</span>
-        <span class="site-logo__type">
-          <span class="name">WASSYOI</span>
-          <span class="sub">お祭工房</span>
-        </span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#cases">事例</a>
-        <a href="#about">WASSYOIについて</a>
-        <a href="#contact" class="m-btn m-btn-primary">お問い合わせ</a>
-      </nav>
-    </div>
+<header class="wp-header">
+  <div class="wp-header__inner">
+    <a href="#" class="wp-logo" aria-label="WASSYOI ホーム">
+      <img class="wp-logo__img" src="assets/wassyoi-logo.png" alt="WASSYOI">
+      <span class="wp-logo__sub">仙台</span>
+    </a>
+    <nav class="wp-nav" aria-label="Primary">
+      <a href="#mission">事業</a>
+      <a href="#cases">実績</a>
+      <a href="#about">私たちについて</a>
+      <a href="#contact" class="is-cta">お問い合わせ</a>
+    </nav>
   </div>
   <div class="m-hachimaki" aria-hidden="true"></div>
 </header>
 
 <main>
-  <!-- ===== Marquee ticker ===== -->
-  <div class="ticker" aria-hidden="true">
-    <div class="m-marquee-track">
-      <span>★ 街ぜんぶが、お祭りになる</span>
-      <span class="accent">◉ 仙台 SENDAI / 石巻 ISHINOMAKI</span>
-      <span>★ 応募から当日運用まで、まとめて引き受けます</span>
-      <span class="accent">◉ お祭り単位で、ていねいに</span>
-      <span>★ お祭り工房 WASSYOI</span>
-      <span class="accent">◉ おまつり、いっしょにつくりませんか</span>
-    </div>
-  </div>
 
   <!-- ===== Hero ===== -->
-  <section class="hero bg-paper">
-    <div class="m-tape m-tape-red hero__deco-tape-1" aria-hidden="true"></div>
-    <div class="m-tape hero__deco-tape-2" aria-hidden="true"></div>
-    <div class="halftone-mustard hero__halftone-mustard" aria-hidden="true"></div>
-    <div class="halftone-red hero__halftone-red" aria-hidden="true"></div>
-    <div class="m-burst m-anim-bobble hero__deco-burst" aria-hidden="true">お祭<br>つくる<br>工房</div>
-    <div class="m-stamp hero__deco-stamp" aria-hidden="true">祭</div>
-
-    <div class="hero__inner">
-      <div class="hero__eyebrow">
-        <span class="m-sticker m-sticker-red m-anim-wiggle">◉ 仙台・石巻発のお祭工房</span>
-      </div>
-
-      <h1 class="hero__title">
+  <section class="wp-hero bg-paper">
+    <div class="wp-decor wp-decor--halftone halftone-mustard" aria-hidden="true"></div>
+    <div class="wp-hero__inner">
+      <div class="wp-eyebrow">SENDAI / ISHINOMAKI · STUDENT TEAM</div>
+      <h1 class="wp-hero__title">
         街ぜんぶの<br>
-        <span class="hl"><span>お祭り</span></span>を、<br>
-        つくる<span style="font-family:var(--m-font-body);font-weight:900;">。</span>
+        <span class="ulay accent">"お祭り"</span>を、<br>
+        つくる。
       </h1>
-
-      <p class="hero__lede">
-        WASSYOI は、地域のお祭・イベントの運営をデジタルで支える小さな工房です。<br>
-        ボランティア募集から当日運用まで、お祭り単位でていねいにお手伝いします。
+      <p class="wp-hero__lede">
+        WASSYOI は、地域の"お祭り"・イベントの運営を<br>
+        デジタルで支える学生チームです。<br>
+        ボランティア募集から当日運用まで、"お祭り"単位でていねいに。
       </p>
-
-      <div class="hero__cta">
-        <a href="#cases" class="m-btn m-btn-primary">事例を見る ↓</a>
+      <div class="wp-hero__cta">
+        <a href="#cases" class="m-btn m-btn-primary">実績を見る ↓</a>
         <a href="#contact" class="m-btn m-btn-ghost">お問い合わせ →</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== Cases ===== -->
-  <section id="cases" class="section bg-paper-warm">
-    <div class="wrap">
-      <div class="section__head">
-        <div class="section__eyebrow">CASE STUDIES</div>
-        <h2 class="section__title">これまで関わった<span class="accent">お祭り</span>。</h2>
-        <p class="section__lede">
-          ボランティアの応募・配置・当日運用までを、お祭り単位で組み上げます。
-        </p>
+  <!-- ===== Stats strip ===== -->
+  <section class="wp-stats" aria-label="WASSYOI の規模">
+    <div class="wp-stats__row">
+      <div>
+        <div class="wp-stat__num">2<small>件</small></div>
+        <div class="wp-stat__label">進行中の"お祭り"事業</div>
       </div>
-
-      <div class="case-grid">
-
-        <!-- Case 1: ほやっほー祭 -->
-        <article class="case" id="case-hoya">
-          <a class="case__cover" href="https://hoyahho-volunteer.vercel.app/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
-            <img src="assets/hoya/top.png" alt="ほやっほー祭 2026 ボランティア募集サイトのトップページ">
-          </a>
-          <div class="case__body">
-            <div class="case__meta">
-              <span>2026.07.04 — 07.05</span>
-              <span class="dot"></span>
-              <span class="place">石巻</span>
-            </div>
-            <h3 class="case__title">ほやっほー祭 2026</h3>
-            <p class="case__excerpt">
-              「お祭りを、いっしょにつくる人」を集めるためのボランティア募集サイト。
-              応募フォーム、応募者向けマイページ、当日のシフト・QRチェックインまで、
-              参加者と運営の両方を支える仕組みを開発・運用しています。
-            </p>
-            <a class="case__cta" href="https://hoyahho-volunteer.vercel.app/" target="_blank" rel="noopener">
-              サイトを見る <span class="arrow">→</span>
-            </a>
-          </div>
-        </article>
-
-        <!-- Case 2: 定禅寺ジャズフェス -->
-        <article class="case case--reverse" id="case-jsf">
-          <a class="case__cover" href="https://jsf-volunteer2026.vercel.app/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
-            <img src="assets/jsf/dashboard-flow.png" alt="定禅寺ジャズフェス 2026 ボランティア管理ダッシュボード">
-          </a>
-          <div class="case__body">
-            <div class="case__meta">
-              <span>2026.09.12 — 09.13</span>
-              <span class="dot"></span>
-              <span class="place">仙台</span>
-            </div>
-            <h3 class="case__title">定禅寺ストリートジャズフェスティバル 2026</h3>
-            <p class="case__excerpt">
-              第35回。約 1,000 人のボランティアを街中 50 拠点に効率配置するための運営システムを開発・運用中。
-              当日の混乱（欠員・再配置・連絡地獄）を解消するためのダッシュボードと、
-              ボランティア向けのマイページが中心です。
-            </p>
-            <a class="case__cta" href="https://jsf-volunteer2026.vercel.app/" target="_blank" rel="noopener">
-              サイトを見る <span class="arrow">→</span>
-            </a>
-          </div>
-        </article>
-
+      <div>
+        <div class="wp-stat__num">1,000<small>人</small></div>
+        <div class="wp-stat__label">配置するボランティア規模</div>
+      </div>
+      <div>
+        <div class="wp-stat__num">50<small>拠点</small></div>
+        <div class="wp-stat__label">当日運用する街中ステージ</div>
+      </div>
+      <div>
+        <div class="wp-stat__num">仙台 / 石巻</div>
+        <div class="wp-stat__label">拠点地域</div>
       </div>
     </div>
   </section>
 
-  <div class="m-zigzag" aria-hidden="true"></div>
-
-  <!-- ===== About ===== -->
-  <section id="about" class="section section--ink">
-    <div class="wrap">
-      <div class="section__head">
-        <div class="section__eyebrow">ABOUT</div>
-        <h2 class="section__title" style="color:var(--m-cream);">
-          WASSYOI<span style="color:var(--m-mustard);">って何？</span>
-        </h2>
+  <!-- ===== Concept ===== -->
+  <section id="mission" class="wp-section">
+    <div class="wp-section__head">
+      <div class="wp-eyebrow">CONCEPT — "お祭り"の再定義</div>
+      <h2 class="wp-section__title">"お祭り"は、<br><span class="accent">地域の熱量</span>の象徴。</h2>
+    </div>
+    <div class="wp-concept">
+      <div>
+        <p>WASSYOI は、地域の"お祭り"・イベントの運営をデジタルで支える学生チームです。</p>
+        <p>"お祭り"はその地域の文化・誇り・人のつながり、すなわち地域の熱量の象徴。一方で関係人口の減少・運営の高齢化・資金力の低下といった課題が積み重なっています。</p>
+        <p>私たちは、"お祭り"そのものを変えるのではなく、運営の足腰をデジタルで支えることで、地域に根ざした"お祭り"の持続可能性を底上げします。</p>
       </div>
+      <div>
+        <p class="wp-concept__claim">
+          地域に根付いた<span class="mark">"お祭り"</span>は<br>
+          未来に継承すべき<span class="accent">文化</span>であり、<br>
+          その地域の<span class="accent">誇り</span>である。
+        </p>
+        <blockquote class="wp-concept__quote">"お祭り"を支えることは、地域の文化と誇りを未来に残すこと。</blockquote>
+      </div>
+    </div>
+  </section>
 
-      <div class="about-grid">
-        <div>
-          <p>
-            WASSYOI は、地域のお祭・イベントの運営をデジタルで支える小さな工房です。
-            主役はあくまで現場で動く実行委員とボランティア、
-            私たちは応募から当日運用までの「面倒な部分」を引き受けて、
-            お祭そのものに集中していただくのが仕事です。
+  <!-- ===== Mission / Values (ink) ===== -->
+  <section class="wp-section wp-section--ink">
+    <div class="wp-section__head">
+      <div class="wp-eyebrow" style="color:var(--m-mustard);">MISSION &amp; VISION</div>
+      <h2 class="wp-section__title">
+        <span class="accent">"お祭り"</span>を通じた<br>地方創生の実現。
+      </h2>
+      <p class="wp-section__lede">
+        担い手の減少、関係人口の縮小、運営の高齢化。"お祭り"が抱える課題は、地域の課題そのもの。
+        WASSYOI は、運営の足腰をデジタルで支えることで、地域に根ざした"お祭り"の持続可能性を底上げします。
+      </p>
+    </div>
+    <div class="wp-values">
+      <article class="wp-value">
+        <div class="wp-value__num">VALUE 01</div>
+        <h3 class="wp-value__title">現場に<br>ねざして。</h3>
+        <p class="wp-value__desc">"お祭り"ごとに必要な仕組みは少しずつ違う。ヒアリングから設計・開発・当日サポートまで、"お祭り"単位でていねいに仕立てます。</p>
+      </article>
+      <article class="wp-value">
+        <div class="wp-value__num">VALUE 02</div>
+        <h3 class="wp-value__title">主役は、<br>実行委員会。</h3>
+        <p class="wp-value__desc">主役はあくまで現場で動く実行委員とボランティア。私たちは応募から当日運用までの面倒な部分を引き受け、"お祭り"そのものに集中していただく裏方です。</p>
+      </article>
+      <article class="wp-value">
+        <div class="wp-value__num">VALUE 03</div>
+        <h3 class="wp-value__title">"お祭り"の力で、<br>地方を活性化。</h3>
+        <p class="wp-value__desc">"お祭り"は地域の熱量の象徴。担い手不足・運営の高齢化に抗い、デジタルで持続可能性を底上げ。地域に根ざした"お祭り"の未来を支えます。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Cases ===== -->
+  <section id="cases" class="wp-section wp-section--alt">
+    <div class="wp-section__head">
+      <div class="wp-eyebrow">CASE STUDIES</div>
+      <h2 class="wp-section__title">これまで関わった<span class="accent">"お祭り"</span>。</h2>
+      <p class="wp-section__lede">ボランティアの応募・配置・当日運用までを、"お祭り"単位で組み上げます。</p>
+    </div>
+    <div class="wp-cases">
+
+      <!-- Case 1: ほやっほー祭 -->
+      <article class="wp-case" id="case-hoya">
+        <a class="wp-case__cover" href="https://hoyahho-volunteer.vercel.app/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+          <img src="assets/hoya/top.png" alt="ほやっほー祭 2026 ボランティア募集サイトのトップページ">
+        </a>
+        <div class="wp-case__body">
+          <div class="wp-case__meta">
+            <span>2026.07.04 — 07.05</span>
+            <span class="dot"></span>
+            <span class="wp-case__place">石巻</span>
+          </div>
+          <h3 class="wp-case__title">ほやっほー祭 2026</h3>
+          <p class="wp-case__excerpt">
+            「"お祭り"を、いっしょにつくる人」を集めるためのボランティア募集サイト。
+            応募フォーム、応募者向けマイページ、当日のシフト・QRチェックインまで、
+            参加者と運営の両方を支える仕組みを開発・運用しています。
           </p>
-          <p>
-            お祭ごとに必要な仕組みは少しずつ違います。
-            ヒアリングから設計・開発・当日のサポートまで、お祭り単位でていねいに仕立てます。
-          </p>
+          <div class="wp-case__tags">
+            <span class="wp-case__tag">#募集サイト</span>
+            <span class="wp-case__tag">#マイページ</span>
+            <span class="wp-case__tag">#QRチェックイン</span>
+          </div>
+          <a class="wp-case__cta" href="https://hoyahho-volunteer.vercel.app/" target="_blank" rel="noopener">
+            サイトを見る <span class="arrow">→</span>
+          </a>
         </div>
+      </article>
 
-        <aside class="about-card">
-          <div class="label">お手伝いできること</div>
-          <ul>
-            <li>ボランティア募集の応募フォームづくり</li>
-            <li>応募者向けマイページとシフト確認</li>
-            <li>運営者向けの可視化ダッシュボード</li>
-            <li>当日のシフト運用・QR チェックイン</li>
-            <li>主催者向けの当日運用ツール（通知・自動編成・CSV）</li>
-          </ul>
-        </aside>
-      </div>
+      <!-- Case 2: 定禅寺ジャズフェス -->
+      <article class="wp-case wp-case--reverse" id="case-jsf">
+        <a class="wp-case__cover" href="https://jsf-volunteer2026.vercel.app/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+          <img src="assets/jsf/dashboard-flow.png" alt="定禅寺ジャズフェス 2026 ボランティア管理ダッシュボード">
+        </a>
+        <div class="wp-case__body">
+          <div class="wp-case__meta">
+            <span>2026.09.12 — 09.13</span>
+            <span class="dot"></span>
+            <span class="wp-case__place">仙台</span>
+          </div>
+          <h3 class="wp-case__title">定禅寺ストリート<br>ジャズフェスティバル 2026</h3>
+          <p class="wp-case__excerpt">
+            第35回。約 1,000 人のボランティアを街中 50 拠点に効率配置するための運営システムを開発・運用中。
+            当日の混乱（欠員・再配置・連絡地獄）を解消するためのダッシュボードと、
+            ボランティア向けのマイページが中心です。
+          </p>
+          <div class="wp-case__tags">
+            <span class="wp-case__tag">#ダッシュボード</span>
+            <span class="wp-case__tag">#配置最適化</span>
+            <span class="wp-case__tag">#当日運用</span>
+          </div>
+          <a class="wp-case__cta" href="https://jsf-volunteer2026.vercel.app/" target="_blank" rel="noopener">
+            サイトを見る <span class="arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== Founders ===== -->
+  <section id="about" class="wp-section">
+    <div class="wp-section__head">
+      <div class="wp-eyebrow">FOUNDERS</div>
+      <h2 class="wp-section__title"><span class="accent">仙台</span>で出会った、<br>二人ではじめたチーム。</h2>
+      <p class="wp-section__lede">
+        東北大学祭実行委員会・定禅寺ジャズフェスティバル — 仙台五大まつりの現場で得た「"お祭り"の課題」と「学生目線での改革経験」が、WASSYOI の原点です。
+      </p>
+    </div>
+    <div class="wp-founders">
+      <article class="wp-founder">
+        <div class="wp-founder__role">CO-FOUNDER / DEV</div>
+        <h3 class="wp-founder__name">創業メンバー A</h3>
+        <p class="wp-founder__bg">東北大学祭実行委員会で委員長を経験。コロナ禍以降初となる外部公開制限なしの対面開催を実現。「イベントの力で地方を活性化したい」がルーツ。</p>
+        <div class="wp-founder__chips">
+          <span class="wp-chip-mini">東北大学祭 委員長</span>
+          <span class="wp-chip-mini">組織のDX化</span>
+        </div>
+      </article>
+      <article class="wp-founder">
+        <div class="wp-founder__role">CO-FOUNDER / OPS</div>
+        <h3 class="wp-founder__name">創業メンバー B</h3>
+        <p class="wp-founder__bg">定禅寺ストリートジャズフェスティバルの副実行委員長として活性化に寄与。学生実行委員数を 0 から 50 名に増員、学生目線での新規施策を多数実現。</p>
+        <div class="wp-founder__chips">
+          <span class="wp-chip-mini">JSF 副実行委員長</span>
+          <span class="wp-chip-mini">学生目線の改革</span>
+        </div>
+      </article>
     </div>
   </section>
 
   <!-- ===== Contact ===== -->
-  <section id="contact" class="section bg-paper">
-    <div class="wrap contact">
-      <div class="section__eyebrow" style="text-align:center;">CONTACT</div>
-      <h2 class="contact__title">
-        祭、いっしょに<br>
+  <section id="contact" class="wp-contact">
+    <div class="wp-wrap--narrow">
+      <div class="wp-eyebrow" style="justify-content:center;display:inline-flex;">CONTACT</div>
+      <h2 class="wp-contact__title">
+        "お祭り"、いっしょに<br>
         <span class="accent">つくりませんか？</span>
       </h2>
-      <p class="contact__lede">
-        お祭・イベントの運営でお困りごとがあれば、<br>
+      <p class="wp-contact__lede">
+        "お祭り"・イベントの運営でお困りごとがあれば、<br>
         応募から当日運用までまとめてご相談ください。
       </p>
-      <div class="contact__cta">
+      <div class="wp-contact__cta">
         <a class="m-btn m-btn-primary" href="mailto:wassyoi.fes@gmail.com?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
           メールでご相談 →
         </a>
       </div>
     </div>
   </section>
+
 </main>
 
 <!-- ===== Footer ===== -->
-<footer class="site-footer">
-  <div class="m-zigzag" style="transform:scaleY(-1);" aria-hidden="true"></div>
-  <div class="site-footer__inner">
-    <div class="site-footer__base">
-      <span class="site-footer__brand">
-        <span class="mark">祭</span>
-        <span class="name">WASSYOI</span>
-      </span>
-      <span>made with <span class="heart">♥</span> in 仙台 / 石巻</span>
-      <span class="font-mono">© 2026 WASSYOI</span>
-    </div>
+<footer class="wp-footer">
+  <div class="wp-footer__inner">
+    <span class="wp-footer__brand">
+      <img class="mark" src="assets/wassyoi-logo.png" alt="WASSYOI">
+    </span>
+    <span>based in 仙台 / 石巻</span>
+    <span class="font-mono">© 2026 WASSYOI</span>
   </div>
 </footer>
 

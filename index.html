@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WASSYOI / Portfolio — 街ぜんぶが、お祭りになる</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="WASSYOI は地域の祭・イベントの運営をデジタルで支える小さな工房です。定禅寺ジャズフェス、ほやっほー祭のボランティア募集サイトを開発・運用しています。">
+<meta property="og:title" content="WASSYOI / Portfolio">
+<meta property="og:description" content="街ぜんぶの<祭>を、つくる。 — 仙台・石巻発、お祭り運営のためのデジタル工房。">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="matsuri.css">
+<link rel="stylesheet" href="portfolio.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23D63B1F'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='40' fill='%23FBF5E9'%3E%E7%A5%AD%3C/text%3E%3C/svg%3E">
+</head>
+<body class="matsuri-root">
+<a href="#projects" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">プロジェクトへスキップ</a>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="site-header__bar">
+    <div class="site-header__inner">
+      <a href="#" class="site-logo" aria-label="WASSYOI portfolio home">
+        <span class="site-logo__mark">祭</span>
+        <span class="site-logo__type">
+          <span class="name">WASSYOI</span>
+          <span class="slash">/</span>
+          <span class="sub">Portfolio</span>
+        </span>
+      </a>
+      <button type="button" class="site-nav__toggle" aria-controls="site-nav" aria-expanded="false">MENU ＋</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#projects" class="is-active">プロジェクト</a>
+        <a href="#about">WASSYOIとは</a>
+        <a href="#contact">連絡先</a>
+        <a href="https://github.com/wassyoi-fes" target="_blank" rel="noopener" class="m-btn m-btn-primary">
+          GitHub →
+        </a>
+      </nav>
+    </div>
+  </div>
+  <div class="m-hachimaki" aria-hidden="true"></div>
+</header>
+
+<main>
+  <!-- ===== Marquee ticker ===== -->
+  <div class="ticker" aria-hidden="true">
+    <div class="m-marquee-track">
+      <span>★ WASSYOI / Portfolio — 街ぜんぶが、お祭りになる</span>
+      <span class="accent">◉ 2026 jsf-Volunteer / hoya-Volunteer in production</span>
+      <span>★ 仙台 SENDAI / 石巻 ISHINOMAKI</span>
+      <span class="accent">◉ Next.js × Supabase × Server Actions</span>
+      <span>★ 1,000+ volunteers, 50+ posts, 2 events</span>
+      <span class="accent">◉ 定禅寺ジャズフェス 2026.09 / ほやっほー祭 2026.07</span>
+    </div>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero bg-paper">
+    <div class="m-tape m-tape-red hero__deco-tape-1" aria-hidden="true"></div>
+    <div class="m-tape hero__deco-tape-2" aria-hidden="true"></div>
+    <div class="halftone-mustard hero__halftone-mustard" aria-hidden="true"></div>
+    <div class="halftone-red hero__halftone-red" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <div class="hero__eyebrow">
+          <span class="m-sticker m-sticker-red m-anim-wiggle">◉ 仙台発・お祭り工房</span>
+          <span class="meta">EST. 2026 / α</span>
+        </div>
+
+        <h1 class="hero__title">
+          街ぜんぶの<br>
+          <span class="hl"><span>お祭り</span></span>を、<br>
+          つくる<span style="font-family:var(--m-font-body);font-weight:900;">。</span>
+        </h1>
+
+        <p class="hero__lede">
+          WASSYOI は、地域のお祭り・イベントの運営をデジタルで支える小さな工房。<br>
+          応募から当日のシフト運用まで、Next.js と Supabase で一気通貫に。
+        </p>
+
+        <div class="hero__cta">
+          <a href="#projects" class="m-btn m-btn-primary">
+            プロジェクトを見る ↓
+          </a>
+          <a href="https://github.com/wassyoi-fes" target="_blank" rel="noopener" class="m-btn m-btn-ghost">
+            GitHub で見る →
+          </a>
+        </div>
+      </div>
+
+      <!-- Collage -->
+      <div class="collage" aria-hidden="true">
+        <div class="m-card collage__poster">
+          <div class="m-tape" style="top:-10px;left:30px;transform:rotate(-5deg);width:80px;"></div>
+          <div class="poster-art">
+            <div class="halftone-mustard halftone-overlay"></div>
+            <div class="copy">
+              <div class="label">NOW BUILDING</div>
+              <div class="name">定禅寺<br>ジャズフェス</div>
+              <div class="when">2026.09.12 — 09.13</div>
+              <div class="where">宮城県仙台市・第35回</div>
+            </div>
+          </div>
+          <div class="meta-row">
+            <span class="id">WASSYOI / 001</span>
+            <span class="m-chip" style="background:var(--m-mustard);">運営支援</span>
+          </div>
+        </div>
+
+        <div class="m-burst m-anim-bobble collage__burst">
+          2<br>projects<br>in prod
+        </div>
+
+        <div class="m-note collage__note">
+          <div class="from">FROM 工房</div>
+          現在、<strong>2 つの祭</strong>の応募〜当日運用を稼働中。<br>
+          <span style="color:var(--m-red);font-weight:700;">→ 下に詳細</span>
+        </div>
+
+        <div class="collage__stat">
+          <div class="label">VOLUNTEERS</div>
+          <div class="num">1,000+</div>
+          <div class="unit">対応規模</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section bg-paper-warm">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <div class="section__eyebrow">02 — PROJECTS</div>
+          <h2 class="section__title">
+            つくっている、<span class="accent">お祭り</span>。
+          </h2>
+          <p class="section__lede">
+            ボランティアの応募・配置・当日運用までを支える、お祭り単位のプロダクト。
+          </p>
+        </div>
+        <span class="m-sticker m-sticker-ink">◉ 2 件 IN PRODUCTION</span>
+      </div>
+
+      <div class="projects">
+
+        <!-- ===== Project 1: JSF Volunteer ===== -->
+        <article class="m-card project" id="project-jsf">
+          <div class="project__band project__band--teal">
+            <div class="halftone-ink project__band-halftone"></div>
+            <div class="project__band-row">
+              <div>
+                <div class="project__no">NO.001 — JAZZ / SENDAI</div>
+                <h3 class="project__title">定禅寺ストリートジャズフェスティバル<br>ボランティア管理</h3>
+                <div class="project__where">宮城県仙台市・2026.09.12（土）— 09.13（日） / 第35回</div>
+              </div>
+              <div class="project__band-status">
+                <span class="m-chip" style="background:#fff;">2026年 開催に向け運用中</span>
+                <span class="m-chip" style="background:rgba(255,255,255,.15);color:#fff;border-color:#fff;">v1 — α release</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__body">
+            <div class="info">
+              <p>
+                約 <strong>1,000 人</strong>のボランティアを、街中 <strong>50 拠点</strong>に効率配置するための運営システム。
+                ボランティア募集 → 配置 → 当日運用 → 事後フォローまでを一気通貫で支援し、
+                「当日の混乱（欠員・再配置・連絡地獄）」を最優先で解消。
+              </p>
+              <p>
+                時間帯×エリアの希望者分布をリアルタイムで把握できる管理ダッシュボードと、
+                サンキー図で「継続／新規／離脱」の人の流れを見える化する設計が特徴。
+              </p>
+
+              <h3>つかっている技術</h3>
+              <div class="project__chips">
+                <span class="m-chip">Next.js 16</span>
+                <span class="m-chip">TypeScript</span>
+                <span class="m-chip">Tailwind CSS 4</span>
+                <span class="m-chip">Radix / shadcn-ui</span>
+                <span class="m-chip">Supabase</span>
+                <span class="m-chip">Resend</span>
+                <span class="m-chip">reCAPTCHA v3</span>
+              </div>
+
+              <h3>主要ページ</h3>
+              <ul class="project__links">
+                <li><a href="https://jsf-volunteer2026.vercel.app/" target="_blank" rel="noopener">
+                  <span>トップ</span><span class="path">/</span><span class="arrow">↗</span>
+                </a></li>
+                <li><a href="https://jsf-volunteer2026.vercel.app/apply" target="_blank" rel="noopener">
+                  <span>ボランティア応募</span><span class="path">/apply</span><span class="arrow">↗</span>
+                </a></li>
+                <li><a href="https://jsf-volunteer2026.vercel.app/mypage" target="_blank" rel="noopener">
+                  <span>マイページ</span><span class="path">/mypage</span><span class="arrow">↗</span>
+                </a></li>
+                <li><a href="https://jsf-volunteer2026.vercel.app/admin/dashboard" target="_blank" rel="noopener">
+                  <span>管理ダッシュボード</span><span class="path">/admin/dashboard</span><span class="arrow">↗</span>
+                </a></li>
+              </ul>
+
+              <div class="project__cta">
+                <a class="m-btn m-btn-teal" href="https://jsf-volunteer2026.vercel.app/" target="_blank" rel="noopener">
+                  本番サイトへ →
+                </a>
+                <a class="m-btn m-btn-ghost" href="https://github.com/chifukomu/jsf-Volunteer2026" target="_blank" rel="noopener">
+                  GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="project__shots">
+              <figure class="shot shot--wide" style="margin:0;">
+                <img class="shot__img" src="assets/jsf/dashboard-flow.png" alt="JSF 管理ダッシュボード — 時間帯×エリアの希望者分布とサンキー図">
+                <figcaption class="shot__caption"><span>SHOT 01 / DASHBOARD</span><span>/admin/dashboard</span></figcaption>
+              </figure>
+              <figure class="shot shot--wide" style="margin:0;">
+                <img class="shot__img" src="assets/jsf/dashboard-totals.png" alt="JSF 管理ダッシュボード — 時間帯ごとの集計テーブル">
+                <figcaption class="shot__caption"><span>SHOT 02 / TOTALS</span><span>/admin/dashboard</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Project 2: hoya-Volunteer ===== -->
+        <article class="m-card project" id="project-hoya">
+          <div class="project__band project__band--red">
+            <div class="halftone-ink project__band-halftone"></div>
+            <div class="project__band-row">
+              <div>
+                <div class="project__no">NO.002 — YAPPO / ISHINOMAKI</div>
+                <h3 class="project__title">ほやっほー祭 2026<br>ボランティア募集サイト</h3>
+                <div class="project__where">石巻市かわまち交流広場・2026.07.04（土）— 07.05（日）</div>
+              </div>
+              <div class="project__band-status">
+                <span class="m-chip" style="background:#fff;">2026年 開催に向け運用中</span>
+                <span class="m-chip" style="background:rgba(255,255,255,.15);color:#fff;border-color:#fff;">deployed on Vercel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__body">
+            <div class="info">
+              <p>
+                石巻のローカル祭「ほやっほー祭」のボランティア募集 → 配置 → 当日運用までを担う Web アプリ。
+                応募フォーム、運営ダッシュボード、ボランティア向けマイページ、当日の <strong>QR チェックイン</strong>を備える。
+              </p>
+              <p>
+                Supabase は <strong>RLS deny-all</strong> + Server Action（service_role）経由のみ書込可、という安全側に倒した設計。
+                応募 ID は <code>HOYA-2026-NNNN</code> 形式でシーケンス採番、
+                応募〜マイページ〜当日運用まで同じ DB を一気通貫で使う。
+              </p>
+
+              <h3>つかっている技術</h3>
+              <div class="project__chips">
+                <span class="m-chip">Next.js 16</span>
+                <span class="m-chip">React 19</span>
+                <span class="m-chip">TypeScript</span>
+                <span class="m-chip">Server Actions</span>
+                <span class="m-chip">Supabase（RLS）</span>
+                <span class="m-chip">Cloudflare Turnstile</span>
+                <span class="m-chip">Vercel</span>
+              </div>
+
+              <h3>主要ページ</h3>
+              <ul class="project__links">
+                <li><a href="https://hoyahho-volunteer.vercel.app/" target="_blank" rel="noopener">
+                  <span>トップ</span><span class="path">/</span><span class="arrow">↗</span>
+                </a></li>
+                <li><a href="https://hoyahho-volunteer.vercel.app/apply" target="_blank" rel="noopener">
+                  <span>ボランティア応募</span><span class="path">/apply</span><span class="arrow">↗</span>
+                </a></li>
+                <li><a href="https://hoyahho-volunteer.vercel.app/mypage" target="_blank" rel="noopener">
+                  <span>マイページ</span><span class="path">/mypage</span><span class="arrow">↗</span>
+                </a></li>
+                <li><a href="https://hoyahho-volunteer.vercel.app/admin" target="_blank" rel="noopener">
+                  <span>運営ダッシュボード</span><span class="path">/admin</span><span class="arrow">↗</span>
+                </a></li>
+                <li><a href="https://hoyahho-volunteer.vercel.app/admin/scan" target="_blank" rel="noopener">
+                  <span>当日 QR スキャナ</span><span class="path">/admin/scan</span><span class="arrow">↗</span>
+                </a></li>
+              </ul>
+
+              <div class="project__cta">
+                <a class="m-btn m-btn-primary" href="https://hoyahho-volunteer.vercel.app/" target="_blank" rel="noopener">
+                  本番サイトへ →
+                </a>
+                <a class="m-btn m-btn-ghost" href="https://github.com/chifukomu/hoya-volunteer" target="_blank" rel="noopener">
+                  GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="project__shots">
+              <figure class="shot shot--wide" style="margin:0;">
+                <img class="shot__img" src="assets/hoya/top.png" alt="ほやっほー祭 トップページ — お祭りを、いっしょにつくる人。">
+                <figcaption class="shot__caption"><span>SHOT 01 / TOP</span><span>/</span></figcaption>
+              </figure>
+              <figure class="shot" style="margin:0;">
+                <img class="shot__img" src="assets/hoya/apply.png" alt="ほやっほー祭 応募フォーム — 基本情報・活動情報・その他">
+                <figcaption class="shot__caption"><span>SHOT 02 / APPLY</span><span>/apply</span></figcaption>
+              </figure>
+              <figure class="shot" style="margin:0;">
+                <img class="shot__img" src="assets/hoya/mypage.png" alt="ほやっほー祭 マイページ — 当日のシフトと QR チェックイン">
+                <figcaption class="shot__caption"><span>SHOT 03 / MYPAGE</span><span>/mypage</span></figcaption>
+              </figure>
+              <figure class="shot shot--wide" style="margin:0;">
+                <img class="shot__img" src="assets/hoya/admin.png" alt="ほやっほー祭 管理ダッシュボード — 応募状況サマリー">
+                <figcaption class="shot__caption"><span>SHOT 04 / ADMIN</span><span>/admin</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="m-zigzag" aria-hidden="true"></div>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section section--ink">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <div class="section__eyebrow">03 — ABOUT</div>
+          <h2 class="section__title" style="color:var(--m-cream);">
+            WASSYOI<span style="color:var(--m-mustard);">って何？</span>
+          </h2>
+        </div>
+        <span class="m-sticker m-sticker-red">◉ 仙台 / 石巻</span>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            WASSYOI は、地域の祭・イベントの運営をデジタルで支える小さな工房です。
+            主役はあくまで現場で動く実行委員とボランティア、
+            私たちは応募から当日運用までの「面倒な部分」を引き受けて、お祭そのものに集中してもらうのが仕事です。
+          </p>
+          <p>
+            得意分野は、応募フォーム・配置最適化・当日のシフト運用・QRチェックインといった、
+            <strong>お祭り単位で繰り返し必要になる仕組み</strong>。
+            Next.js と Supabase をベースに、お祭ごとに UI を仕立てて納品しています。
+          </p>
+          <p style="font-size:13px;opacity:.75;">
+            現在は東北を中心に、定禅寺ジャズフェス（仙台）と ほやっほー祭（石巻）の運営を支援中。
+          </p>
+        </div>
+
+        <aside class="about-card">
+          <div class="label">WHAT WE BUILD</div>
+          <ul>
+            <li>大規模ボランティア募集〜配置の管理システム</li>
+            <li>運営者向けの可視化ダッシュボード（時間帯×拠点）</li>
+            <li>応募者マイページとシフト確認・QRチェックイン</li>
+            <li>主催者向けの当日運用ツール（自動編成・通知・CSV）</li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="stats" style="margin-top:36px;">
+        <div class="stat">
+          <div class="stat__label">EVENTS</div>
+          <div class="stat__num">2</div>
+          <div class="stat__caption">2026 シーズン稼働中</div>
+        </div>
+        <div class="stat">
+          <div class="stat__label">VOLUNTEERS</div>
+          <div class="stat__num">1,000+</div>
+          <div class="stat__caption">対応規模・延べ人数</div>
+        </div>
+        <div class="stat">
+          <div class="stat__label">POSTS</div>
+          <div class="stat__num">50+</div>
+          <div class="stat__caption">同時並行運用拠点</div>
+        </div>
+        <div class="stat">
+          <div class="stat__label">STACK</div>
+          <div class="stat__num" style="font-size:28px;">Next + Supa</div>
+          <div class="stat__caption">Next.js × Supabase × Server Actions</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section bg-paper">
+    <div class="wrap contact-grid">
+      <div>
+        <div class="section__eyebrow">04 — CONTACT</div>
+        <h2 class="section__title">
+          祭、いっしょに<br>
+          <span class="accent">つくりませんか？</span>
+        </h2>
+        <p class="section__lede" style="margin-top:12px;max-width:560px;">
+          お祭りやイベントの運営でお困りごとがあれば、<br>
+          応募から当日運用までまとめてご相談ください。
+        </p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;">
+          <a class="m-btn m-btn-primary" href="https://github.com/wassyoi-fes" target="_blank" rel="noopener">
+            GitHub: @wassyoi-fes →
+          </a>
+          <a class="m-btn m-btn-ghost" href="#projects">
+            ↑ プロジェクトを見る
+          </a>
+        </div>
+      </div>
+
+      <div class="m-card-soft" style="padding:22px;background:#fff;border:1.5px solid var(--m-ink);box-shadow:4px 4px 0 var(--m-ink);position:relative;">
+        <div class="m-tape m-tape-red" style="top:-10px;right:24px;transform:rotate(3deg);width:90px;"></div>
+        <div style="font-family:var(--m-font-mono);font-size:11px;color:var(--m-ink-3);margin-bottom:8px;">FROM 工房</div>
+        <p style="margin:0 0 12px;font-size:14px;line-height:1.8;">
+          ・応募フォーム＋当日運用の <strong>1 件まるごと</strong>引き受けます。<br>
+          ・既存システムの一部（管理ダッシュボードのみ等）でも OK。<br>
+          ・お祭りの規模・日程・拠点数を添えてご相談ください。
+        </p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span class="m-chip">仙台</span>
+          <span class="m-chip">石巻</span>
+          <span class="m-chip">東北一円</span>
+          <span class="m-chip">遠方も可</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="m-zigzag" style="transform:scaleY(-1);" aria-hidden="true"></div>
+  <div class="site-footer__inner">
+    <div class="site-footer__cols">
+      <div class="site-footer__brand">
+        <div style="display:inline-flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <span style="width:40px;height:40px;display:grid;place-items:center;background:var(--m-red);color:#fff;border-radius:10px;border:1.5px solid var(--m-cream);font-family:var(--m-font-display);font-weight:800;font-size:22px;">祭</span>
+          <span style="display:flex;align-items:baseline;gap:8px;">
+            <span class="font-display" style="font-size:22px;">WASSYOI</span>
+            <span class="font-mono" style="font-size:11px;opacity:.55;">/</span>
+            <span style="font-size:13px;font-weight:600;opacity:.85;">Portfolio</span>
+          </span>
+        </div>
+        <p>
+          地域の祭・イベントの運営をデジタルで支える小さな工房。<br>
+          仙台・石巻発、お祭りごとに UI を仕立てて納品します。
+        </p>
+      </div>
+
+      <div class="site-footer__col">
+        <h4>PROJECTS</h4>
+        <ul>
+          <li><a href="#project-jsf">定禅寺ジャズフェス</a></li>
+          <li><a href="#project-hoya">ほやっほー祭</a></li>
+          <li><a href="https://jsf-volunteer2026.vercel.app/" target="_blank" rel="noopener">JSF 本番サイト ↗</a></li>
+          <li><a href="https://hoyahho-volunteer.vercel.app/" target="_blank" rel="noopener">ほやっほー祭 本番 ↗</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h4>CONTACT</h4>
+        <ul>
+          <li><a href="https://github.com/wassyoi-fes" target="_blank" rel="noopener">GitHub @wassyoi-fes ↗</a></li>
+          <li><a href="https://github.com/chifukomu/jsf-Volunteer2026" target="_blank" rel="noopener">jsf-Volunteer2026 repo ↗</a></li>
+          <li><a href="https://github.com/chifukomu/hoya-volunteer" target="_blank" rel="noopener">hoya-volunteer repo ↗</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="m-hachimaki" style="margin-bottom:16px;" aria-hidden="true"></div>
+
+    <div class="site-footer__base">
+      <span class="font-mono">© 2026 WASSYOI / Portfolio — All rights reserved.</span>
+      <span>made with <span class="heart">♥</span> in 仙台 / 石巻</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var toggle = document.querySelector('.site-nav__toggle');
+    var nav = document.getElementById('site-nav');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.textContent = open ? 'CLOSE ✕' : 'MENU ＋';
+    });
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        if (window.matchMedia('(max-width: 720px)').matches) {
+          nav.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.textContent = 'MENU ＋';
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>

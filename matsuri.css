@@ -1,0 +1,293 @@
+/* WASSYOI Portfolio — Matsuri Direction
+   Paper-collage festival aesthetic. Bricolage display + Zen Kaku body,
+   warm cream paper, vermillion + mustard, halftone, masking tape, hachimaki. */
+
+:root {
+  --m-red: #D63B1F;
+  --m-red-deep: #A52812;
+  --m-red-soft: #F4E1DC;
+  --m-mustard: #E8B84A;
+  --m-mustard-deep: #B98A1E;
+  --m-mustard-soft: #FBEED0;
+  --m-teal: #1E7A7A;
+  --m-teal-soft: #CFE5E3;
+  --m-navy: #1D2B4A;
+  --m-cream: #FBF5E9;
+  --m-paper: #F7EDD8;
+  --m-ink: #1A1614;
+  --m-ink-2: #44372E;
+  --m-ink-3: rgba(26,22,20,.55);
+  --m-radius: 18px;
+
+  --m-font-display: "Bricolage Grotesque", "Zen Kaku Gothic New", system-ui, sans-serif;
+  --m-font-body: "Zen Kaku Gothic New", "Noto Sans JP", system-ui, sans-serif;
+  --m-font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* ===== Page chrome ===== */
+.matsuri-root {
+  font-family: var(--m-font-body);
+  color: var(--m-ink);
+  background: var(--m-cream);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "palt";
+  min-height: 100vh;
+}
+.matsuri-root *,
+.matsuri-root *::before,
+.matsuri-root *::after { box-sizing: border-box; }
+
+.font-display {
+  font-family: var(--m-font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.font-mono { font-family: var(--m-font-mono); }
+
+/* ===== Paper textures ===== */
+.bg-paper {
+  background-color: var(--m-cream);
+  background-image:
+    radial-gradient(rgba(26,22,20,.035) 1px, transparent 1px),
+    radial-gradient(rgba(26,22,20,.025) 1px, transparent 1px);
+  background-size: 14px 14px, 28px 28px;
+  background-position: 0 0, 7px 7px;
+}
+.bg-paper-warm {
+  background-color: var(--m-paper);
+  background-image:
+    radial-gradient(rgba(26,22,20,.045) 1px, transparent 1.2px);
+  background-size: 10px 10px;
+}
+.bg-ink { background: var(--m-ink); color: var(--m-cream); }
+
+/* Halftone */
+.halftone-red {
+  background-image: radial-gradient(var(--m-red) 22%, transparent 23%);
+  background-size: 10px 10px;
+}
+.halftone-mustard {
+  background-image: radial-gradient(var(--m-mustard) 22%, transparent 23%);
+  background-size: 8px 8px;
+}
+.halftone-ink {
+  background-image: radial-gradient(var(--m-ink) 22%, transparent 23%);
+  background-size: 7px 7px;
+}
+
+/* Diagonal stripes */
+.stripe-red {
+  background: repeating-linear-gradient(-45deg, var(--m-red) 0 10px, #C83619 10px 20px);
+}
+.stripe-mustard {
+  background: repeating-linear-gradient(-45deg, var(--m-mustard) 0 10px, #D9A834 10px 20px);
+}
+.stripe-cream {
+  background: repeating-linear-gradient(-45deg, var(--m-cream) 0 8px, #F0E6D0 8px 16px);
+}
+
+/* ===== Tape / masking ===== */
+.m-tape {
+  position: absolute;
+  height: 22px;
+  width: 80px;
+  background: rgba(232, 184, 74, 0.7);
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+.m-tape::before, .m-tape::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; width: 6px;
+  background-image: linear-gradient(90deg, transparent 0 3px, rgba(255,255,255,.5) 3px 6px);
+}
+.m-tape::before { left: -1px; }
+.m-tape::after  { right: -1px; transform: scaleX(-1); }
+.m-tape-red  { background: rgba(214, 59, 31, 0.72); }
+.m-tape-teal { background: rgba(30, 122, 122, 0.66); }
+
+/* ===== Sticker / chip / button ===== */
+.m-sticker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 700;
+  font-size: 13px;
+  background: var(--m-mustard);
+  color: var(--m-ink);
+  box-shadow: 0 2px 0 var(--m-ink);
+  border: 1.5px solid var(--m-ink);
+  white-space: nowrap;
+}
+.m-sticker-red  { background: var(--m-red); color: #fff; }
+.m-sticker-teal { background: var(--m-teal); color: #fff; }
+.m-sticker-ink  { background: var(--m-ink); color: var(--m-cream); }
+
+.m-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1.2px solid var(--m-ink);
+  background: #fff;
+  color: var(--m-ink);
+}
+
+.m-card {
+  background: #fff;
+  border: 1.5px solid var(--m-ink);
+  border-radius: var(--m-radius);
+  box-shadow: 4px 4px 0 var(--m-ink);
+  position: relative;
+  transition: transform .15s cubic-bezier(.2,.7,.3,1), box-shadow .15s cubic-bezier(.2,.7,.3,1);
+}
+.m-card:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--m-ink); }
+.m-card-soft {
+  background: #fff;
+  border: 1px solid rgba(26,22,20,.15);
+  border-radius: var(--m-radius);
+  box-shadow: 0 4px 14px rgba(26,22,20,.06);
+}
+
+.m-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1.5px solid var(--m-ink);
+  cursor: pointer;
+  transition: transform .12s cubic-bezier(.2,.7,.3,1), box-shadow .12s cubic-bezier(.2,.7,.3,1);
+  white-space: nowrap;
+  color: var(--m-ink);
+  background: #fff;
+  text-decoration: none;
+}
+.m-btn-primary { background: var(--m-red); color: #fff; box-shadow: 3px 3px 0 var(--m-ink); }
+.m-btn-primary:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--m-ink); }
+.m-btn-mustard { background: var(--m-mustard); color: var(--m-ink); box-shadow: 3px 3px 0 var(--m-ink); }
+.m-btn-mustard:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--m-ink); }
+.m-btn-teal { background: var(--m-teal); color: #fff; box-shadow: 3px 3px 0 var(--m-ink); }
+.m-btn-teal:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--m-ink); }
+.m-btn-ghost { background: #fff; }
+.m-btn-ghost:hover { background: var(--m-paper); }
+
+/* ===== Burst / star sticker ===== */
+.m-burst {
+  position: absolute;
+  width: 84px; height: 84px;
+  background: var(--m-mustard);
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--m-ink);
+  line-height: 1.05;
+  border: none;
+  clip-path: polygon(
+    50% 0%, 61% 12%, 75% 6%, 79% 21%, 94% 20%,
+    90% 35%, 100% 45%, 88% 55%, 96% 70%, 81% 73%,
+    80% 88%, 65% 84%, 57% 98%, 45% 88%, 30% 96%,
+    25% 82%, 10% 82%, 14% 68%, 2% 58%, 14% 48%,
+    4% 32%, 19% 30%, 16% 16%, 31% 18%, 37% 4%
+  );
+}
+
+/* ===== Zigzag separator ===== */
+.m-zigzag {
+  height: 10px;
+  background: var(--m-ink);
+  clip-path: polygon(
+    0 0, 2.5% 100%, 5% 0, 7.5% 100%, 10% 0, 12.5% 100%, 15% 0, 17.5% 100%,
+    20% 0, 22.5% 100%, 25% 0, 27.5% 100%, 30% 0, 32.5% 100%, 35% 0, 37.5% 100%,
+    40% 0, 42.5% 100%, 45% 0, 47.5% 100%, 50% 0, 52.5% 100%, 55% 0, 57.5% 100%,
+    60% 0, 62.5% 100%, 65% 0, 67.5% 100%, 70% 0, 72.5% 100%, 75% 0, 77.5% 100%,
+    80% 0, 82.5% 100%, 85% 0, 87.5% 100%, 90% 0, 92.5% 100%, 95% 0, 97.5% 100%, 100% 0
+  );
+}
+
+/* ===== Sticky note ===== */
+.m-note {
+  background: #FFF5B8;
+  padding: 14px 16px;
+  border-radius: 4px;
+  box-shadow: 2px 3px 0 rgba(26,22,20,.18);
+  font-size: 13px;
+  line-height: 1.55;
+  position: relative;
+}
+
+/* ===== Marquee ticker ===== */
+@keyframes m-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.m-marquee-track {
+  display: flex; gap: 2.5rem;
+  width: max-content;
+  animation: m-marquee 38s linear infinite;
+  align-items: center;
+}
+
+/* ===== Animations ===== */
+@keyframes m-wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+@keyframes m-bobble {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes m-spin-slow { to { transform: rotate(360deg); } }
+.m-anim-wiggle { animation: m-wiggle 3.2s ease-in-out infinite; transform-origin: center; }
+.m-anim-bobble { animation: m-bobble 2.6s ease-in-out infinite; }
+.m-anim-spin   { animation: m-spin-slow 14s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .m-marquee-track,
+  .m-anim-wiggle,
+  .m-anim-bobble,
+  .m-anim-spin { animation: none !important; }
+}
+
+/* ===== Stamp / seal mark ===== */
+.m-stamp {
+  width: 100%; aspect-ratio: 1; border-radius: 50%;
+  background: var(--m-red);
+  border: 3px solid var(--m-red);
+  position: relative;
+  display: grid; place-items: center;
+  color: var(--m-cream);
+  font-family: var(--m-font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  box-shadow: 0 4px 14px rgba(0,0,0,.12);
+}
+.m-stamp::before {
+  content: ""; position: absolute; inset: 6%;
+  border: 1.5px solid var(--m-cream); border-radius: 50%;
+  pointer-events: none;
+}
+
+/* ===== Hachimaki strip (festival headband) — recreated as a CSS pattern ===== */
+.m-hachimaki {
+  height: 14px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--m-red) 0 24px,
+      #fff 24px 32px,
+      var(--m-mustard) 32px 56px,
+      #fff 56px 64px,
+      var(--m-ink) 64px 80px,
+      #fff 80px 88px
+    );
+  border-top: 1.5px solid var(--m-ink);
+  border-bottom: 1.5px solid var(--m-ink);
+}

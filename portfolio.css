@@ -17,13 +17,6 @@ a { color: inherit; }
   color: var(--m-ink-3);
   text-transform: uppercase;
   margin-bottom: 14px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.wp-eyebrow::before {
-  content: "";
-  width: 18px; height: 1.5px; background: var(--m-red);
   display: inline-block;
 }
 
@@ -64,7 +57,7 @@ a { color: inherit; }
 .wp-section, .wp-contact { scroll-margin-top: 88px; }
 
 /* ========== Hero ========== */
-.wp-hero { position: relative; padding: 96px 32px 84px; overflow: hidden; text-align: center; }
+.wp-hero { position: relative; padding: 72px 32px 56px; overflow: hidden; text-align: center; }
 .wp-hero__inner { position: relative; }
 .wp-eyebrow { /* base, but ensure header alignment */ }
 .wp-hero__title {
@@ -95,8 +88,8 @@ a { color: inherit; }
   color: var(--m-ink-2);
 }
 .wp-hero__lede {
-  max-width: 580px; font-size: 17px;
-  margin: 0 auto 36px;
+  max-width: 920px; font-size: 17px;
+  margin: 0 auto 32px;
 }
 .wp-hero__cta { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 
@@ -135,10 +128,10 @@ a { color: inherit; }
 }
 
 /* ========== Section frame ========== */
-.wp-section { padding: 96px 32px; position: relative; text-align: center; }
+.wp-section { padding: 64px 32px; position: relative; text-align: center; }
 .wp-section--alt { background: var(--m-paper); }
 .wp-section--ink { background: var(--m-ink); color: var(--m-cream); }
-.wp-section__head { margin: 0 0 48px; }
+.wp-section__head { margin: 0 0 36px; }
 .wp-section__title {
   font-family: var(--m-font-display); font-weight: 800;
   letter-spacing: -0.022em;
@@ -149,7 +142,7 @@ a { color: inherit; }
 .wp-section--ink .wp-section__title { color: var(--m-cream); }
 .wp-section__title .accent { color: var(--m-red); }
 .wp-section--ink .wp-section__title .accent { color: var(--m-mustard); }
-.wp-section__lede { margin: 18px auto 0; max-width: 640px; }
+.wp-section__lede { margin: 18px auto 0; max-width: 880px; }
 .wp-section--ink .wp-section__lede { color: rgba(251,245,233,0.78); }
 
 /* ========== Mission cards (3 values) ========== */
@@ -176,18 +169,8 @@ a { color: inherit; }
 .wp-value__desc { margin: 0; }
 .wp-section--ink .wp-value__desc { color: rgba(251,245,233,0.78); }
 
-/* ========== Concept ("お祭り"の再定義) ========== */
-.wp-concept__body p { max-width: 760px; margin: 0 auto 22px; }
-.wp-concept__claim {
-  font-family: var(--m-font-display); font-weight: 800;
-  font-size: clamp(36px, 4.6vw, 64px);
-  letter-spacing: -0.02em; line-height: 1.35;
-  color: var(--m-ink);
-  margin: 44px 0 0;
-  text-wrap: balance;
-}
-.wp-concept__claim .accent { color: var(--m-red); }
-.wp-concept__claim .mark { background: var(--m-mustard); padding: 0 8px; }
+/* ========== Concept ========== */
+.wp-concept__body p { max-width: 880px; margin: 0 auto 22px; }
 
 /* ========== Cases ========== */
 .wp-cases {
@@ -287,7 +270,7 @@ a { color: inherit; }
 }
 
 /* ========== Contact ========== */
-.wp-contact { text-align: center; padding: 120px 28px; }
+.wp-contact { text-align: center; padding: 80px 32px; scroll-margin-top: 88px; }
 .wp-contact__title {
   font-family: var(--m-font-display); font-weight: 800;
   font-size: clamp(34px, 4.6vw, 60px); letter-spacing: -0.02em;
@@ -322,8 +305,9 @@ a { color: inherit; }
   .wp-case--reverse .wp-case__body { order: 1; }
 }
 @media (max-width: 640px) {
-  .wp-section { padding: 72px 22px; }
-  .wp-hero { padding: 64px 22px 64px; }
+  .wp-section { padding: 56px 22px; }
+  .wp-hero { padding: 56px 22px 48px; }
+  .wp-contact { padding: 64px 22px; }
   .wp-header__inner { padding: 16px 22px; }
   .wp-footer { padding: 48px 22px 32px; }
   .wp-nav a:not(.is-cta) { display: none; }

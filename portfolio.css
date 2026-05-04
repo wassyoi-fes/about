@@ -2,6 +2,10 @@
    Built on top of matsuri.css. Festival cues used as accent only. */
 
 html, body { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
 body { font-family: var(--m-font-body); color: var(--m-ink); background: var(--m-cream); }
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }

@@ -190,7 +190,8 @@ a { color: inherit; }
   display: grid; grid-template-columns: 1fr; gap: 40px;
 }
 .wp-cases__cta {
-  margin-top: 40px;
+  margin-top: 72px;
+  padding-top: 8px;
   display: flex;
   justify-content: center;
 }

@@ -97,7 +97,7 @@ a { color: inherit; }
 }
 .wp-hero__note {
   font-family: var(--m-font-body);
-  font-size: 12px;
+  font-size: 13.2px;
   line-height: 1.8;
   color: var(--m-ink-3);
   max-width: 820px;

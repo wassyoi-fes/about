@@ -304,6 +304,7 @@ a { color: inherit; }
 }
 .wp-contact__title .accent { color: var(--m-red); }
 .wp-contact__lede { max-width: 620px; margin: 0 auto 32px; }
+.wp-contact__cta { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 .wp-contact__cta a { font-size: 16px; padding: 14px 28px; }
 
 /* ========== Footer ========== */

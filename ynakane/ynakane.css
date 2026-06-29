@@ -136,7 +136,7 @@
   .yn-hero__photo { width: 200px; height: 200px; }
   .yn-hero__name { justify-content: center; }
   .yn-hero__tagline { text-align: center; }
-  .yn-hero__lede { text-align: left; }
+  .yn-hero__lede { text-align: center; }
   .yn-socials { justify-content: center; }
 
   .yn-timeline::before { left: 100px; }

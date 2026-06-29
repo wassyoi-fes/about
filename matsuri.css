@@ -1,5 +1,5 @@
 /* WASSYOI Portfolio — Matsuri Direction
-   Paper-collage festival aesthetic. Bricolage display + Zen Kaku body,
+   Paper-collage festival aesthetic. LINE Seed JP throughout,
    warm cream paper, vermillion + mustard, halftone, masking tape, hachimaki. */
 
 :root {
@@ -19,9 +19,9 @@
   --m-ink-3: rgba(26,22,20,.55);
   --m-radius: 18px;
 
-  --m-font-display: "Bricolage Grotesque", "Zen Kaku Gothic New", system-ui, sans-serif;
-  --m-font-body: "Zen Kaku Gothic New", "Noto Sans JP", system-ui, sans-serif;
-  --m-font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --m-font-display: "Zen Kaku Gothic New", "LINE Seed JP", system-ui, sans-serif;
+  --m-font-body: "LINE Seed JP", system-ui, sans-serif;
+  --m-font-mono: "LINE Seed JP", system-ui, sans-serif;
 }
 
 /* ===== Page chrome ===== */

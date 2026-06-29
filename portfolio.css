@@ -172,7 +172,7 @@ a { color: inherit; }
 .wp-value__title {
   font-family: var(--m-font-display); font-weight: 800;
   font-size: 24px; letter-spacing: -0.02em;
-  color: var(--m-cream); line-height: 1.25;
+  color: var(--m-mustard); line-height: 1.25;
 }
 .wp-value__title .accent { color: var(--m-red); }
 .wp-value__desc { margin: 0; }

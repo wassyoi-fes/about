@@ -262,8 +262,8 @@ a { color: inherit; }
 
 /* ========== Founders ========== */
 .wp-founders {
-  max-width: 880px; margin: 0 auto;
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+  max-width: 520px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr; gap: 20px;
 }
 .wp-founder {
   background: #fff;
@@ -279,10 +279,55 @@ a { color: inherit; }
   gap: 10px;
   padding: 36px 28px;
 }
+.wp-founder__avatar {
+  width: 132px; height: 132px; border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--m-cream);
+  box-shadow: 0 4px 14px rgba(26,22,20,0.12);
+  margin-bottom: 4px;
+}
+.wp-founder__avatar img {
+  width: 100%; height: 100%; object-fit: cover;
+  display: block;
+}
 .wp-founder__role {
   font-family: var(--m-font-mono); font-size: 11px;
   letter-spacing: 0.08em; color: var(--m-red);
 }
+.wp-founder__name {
+  font-family: var(--m-font-display); font-weight: 800;
+  font-size: 28px; letter-spacing: -0.01em;
+  color: var(--m-ink); margin: 0; line-height: 1.2;
+}
+.wp-founder__name-en {
+  font-family: var(--m-font-mono); font-size: 12px;
+  letter-spacing: 0.12em; color: var(--m-ink-2);
+  margin-top: -6px;
+}
+.wp-founder__titles {
+  list-style: none; padding: 0; margin: 4px 0 0;
+  display: flex; flex-direction: column; gap: 4px;
+  font-size: 13px; color: var(--m-ink-2); line-height: 1.5;
+}
+.wp-founder__titles li::before {
+  content: ""; display: inline-block;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--m-mustard);
+  margin-right: 8px; vertical-align: middle;
+}
+.wp-founder__bio {
+  font-size: 14px; line-height: 1.7;
+  color: var(--m-ink-2); margin: 6px 0 0;
+}
+.wp-founder__link {
+  margin-top: 4px;
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--m-font-mono);
+  font-size: 12px; font-weight: 600; letter-spacing: 0.06em;
+  color: var(--m-red); text-decoration: none;
+}
+.wp-founder__link .arrow { transition: transform 0.15s; }
+.wp-founder__link:hover .arrow { transform: translateX(3px); }
 .wp-founder__name-coming {
   font-family: var(--m-font-display); font-weight: 800;
   font-size: 26px; letter-spacing: -0.02em;

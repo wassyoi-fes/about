@@ -41,15 +41,16 @@
   font-size: clamp(20px, 2.2vw, 28px);
   font-weight: 700;
   color: var(--m-ink);
-  margin: 4px 0 0; line-height: 1.4;
+  margin: 4px 0 -10px; line-height: 1.35;
 }
 .yn-hero__tagline .accent { color: var(--m-red); }
 .yn-hero__lede {
   font-size: 15px; line-height: 1.85;
   color: var(--m-ink-2);
-  margin: 6px 0 0;
-  max-width: 580px;
+  margin: 0;
+  max-width: 620px;
 }
+.yn-hero__lede + .yn-hero__lede { margin-top: 4px; }
 
 /* ========== Hero socials ========== */
 .yn-socials {
@@ -71,45 +72,6 @@
 }
 .yn-socials svg { width: 20px; height: 20px; fill: currentColor; }
 
-/* ========== Now (current roles) ========== */
-.yn-now {
-  list-style: none; padding: 0;
-  max-width: 760px; margin: 0 auto;
-  display: flex; flex-direction: column; gap: 14px;
-}
-.yn-now li {
-  background: #fff;
-  border: 1px solid rgba(26,22,20,0.08);
-  border-left: 4px solid var(--m-red);
-  border-radius: 12px;
-  padding: 18px 22px;
-  display: flex; flex-direction: column; gap: 4px;
-}
-.yn-now__org {
-  font-weight: 700; font-size: 16px;
-  color: var(--m-ink);
-}
-.yn-now__role {
-  font-size: 14px; color: var(--m-ink-2);
-  line-height: 1.5;
-}
-
-/* ========== Skills ========== */
-.yn-skills {
-  max-width: 760px; margin: 0 auto;
-  display: flex; flex-wrap: wrap; gap: 10px;
-  justify-content: center;
-}
-.yn-skill {
-  display: inline-flex; align-items: center;
-  padding: 10px 18px;
-  background: var(--m-mustard-soft);
-  color: var(--m-ink);
-  border: 1px solid var(--m-mustard);
-  border-radius: 999px;
-  font-size: 14px; font-weight: 700;
-}
-
 /* ========== Career timeline ========== */
 .yn-timeline {
   list-style: none; padding: 0;
@@ -120,13 +82,13 @@
 .yn-timeline::before {
   content: ""; position: absolute;
   top: 8px; bottom: 8px;
-  left: 120px;
+  left: 150px;
   width: 2px;
   background: rgba(179,29,0,0.18);
 }
 .yn-timeline li {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 150px 1fr;
   gap: 24px;
   padding: 16px 0;
   position: relative;
@@ -134,7 +96,7 @@
 .yn-timeline li::before {
   content: "";
   position: absolute;
-  left: 113px; top: 22px;
+  left: 143px; top: 22px;
   width: 16px; height: 16px;
   border-radius: 50%;
   background: var(--m-red);
@@ -177,9 +139,9 @@
   .yn-hero__lede { text-align: left; }
   .yn-socials { justify-content: center; }
 
-  .yn-timeline::before { left: 80px; }
-  .yn-timeline li { grid-template-columns: 80px 1fr; gap: 16px; }
-  .yn-timeline li::before { left: 73px; }
-  .yn-timeline__date { padding-right: 16px; font-size: 12px; }
+  .yn-timeline::before { left: 100px; }
+  .yn-timeline li { grid-template-columns: 100px 1fr; gap: 16px; }
+  .yn-timeline li::before { left: 93px; }
+  .yn-timeline__date { padding-right: 16px; font-size: 11px; }
   .yn-timeline__body { padding-left: 16px; }
 }

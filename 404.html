@@ -3,10 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>WASSYOI</title>
-<meta name="robots" content="noindex">
-<!-- 旧 URL（wassyoi-fes.github.io/about/…）から、同じパスの wassyoi-fes.com/… へ送る -->
-<script>location.replace('https://wassyoi-fes.com' + location.pathname.replace(/^\/about/, '') + location.search + location.hash);</script>
+<!-- 旧 URL（wassyoi-fes.github.io/about/）は wassyoi-fes.com に移転した。
+     GitHub Pages はサーバー側の 301 ができないため、Google が恒久的な転送として扱う
+     「待ち時間 0 の meta refresh」と canonical で移転先を伝える -->
+<!-- 404.html はどのパスでも返るので canonical は付けない（404 として扱われ、検索結果には出ない） -->
 <meta http-equiv="refresh" content="0; url=https://wassyoi-fes.com/">
+<script>location.replace('https://wassyoi-fes.com' + location.pathname.replace(/^\/about/, '') + location.search + location.hash);</script>
 </head>
 <body>
 <p><a href="https://wassyoi-fes.com/">wassyoi-fes.com</a> に移動しました。</p>
